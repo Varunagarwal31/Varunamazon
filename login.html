@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login form</title>
+        <style>
+            h1 {
+                text-align: center;
+                /* background: linear-gradient(10deg); */
+                background-color: antiquewhite;
+                color: darkslategrey;
+            }
+            form {
+                justify-content: flex;
+                top: 30%;
+                left: 33%;
+                position: absolute;
+                text-align: center;
+                width: 500px;
+                height: 300px;
+                border: 1px solid black;
+                padding: 0.5%;
+                box-shadow: 0px 0px 10px rgb(22, 15, 1);
+                font-size: x-large;
+            }
+            body {
+                background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9310JHJFAuaZvamnsu5VnzTCXoVmsnnVUXQ&usqp=CAU);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .para{
+                color: black;
+            }        
+        </style>
+    </head>
+    <body>   
+        <h1>Student Login page</h1>
+        <form action="">
+            <h2>Student login</h2>
+            <div>
+                <div>
+                    <label for="user name">User name : </label>
+                    <input id="user" type="text" name="user name" placeholder="user@gmail.com" required>
+                </div>
+                <br>
+                <div>
+                    <label for="password">Password : </label>
+                    <input id="pass" type="password" name="password" placeholder="Enter password" required>
+                </div>
+                <br>
+                <button><a href ="./myHome.html">Login</a></button>
+            </div>
+            <br>
+            <div class = "para">
+                <div style=" font-size: large;"><a href="https://www.google.com">Forgot password?</a></div>
+            </div>
+        </form>
+    </body>
+</html>

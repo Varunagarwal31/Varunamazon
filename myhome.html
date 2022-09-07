@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    
+
+    <style>
+        .hcontent {
+            color: white;
+            font-size: 15px;
+        }
+
+        .hlogo {
+            color: white;
+            font-size: 25px;
+            font-weight: 500;
+        }
+
+        .left-col {
+            float: left;
+            font-size: 25px;
+            font-weight: 500;
+            width: 500px;
+            margin-bottom: 25px;
+            margin-top: -20px;
+        }
+
+        table
+         {
+            padding: 35px;
+        }
+
+        .right-col {
+            width: 50%;
+            float: right;
+            margin-left: 50px;
+            font-size: 25px;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 25px;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <div class="">
+        <nav class="navbar navbar-expand-lg" style="background-color: black;">
+            <a class="navbar-brand hlogo" href="./myhome.html">Hindu School</a>
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link hcontent" href="./myhome.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link hcontent" href="#" style="margin-right: 30px; margin-left: 30px;">About Us</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link hcontent" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <a class="nav-link hcontent" href="./login.html">Logout</a>
+        </nav>
+    </div>
+    <!-- Form and table -->
+    <!-- Student form -->
+    <div class="container mt-5">
+        <div class="left-col">
+            <div class="jumbotron">
+                <div class="stud" style="text-align: center">Student Form</div>
+                <hr>
+                <form class="form-horizontal" onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div class="form-group">
+                        <label class="control-label">Name: </label>
+                        <input class="form-control" type="text" name="name" id="name" placeholder="Enter Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Email:</label>
+                        <input class="form-control" type="text" name="email" id="email"
+                            placeholder="Enter Email address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" style="margin-top: 10px;">Subject:</label>
+                        <select name="subject" id="subject" class="form-control">
+                            <option value="">Select Subject</option>
+                            <option value="CSE">CSE</option>
+                            <option value="ECE">ECE</option>
+                            <option value="IT">IT</option>
+                            <option value="EEE">EEE</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="submit" class="btn btn-default bg-primary mx-auto d-block"
+                            style=" color: white; margin-bottom: -30px; ">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="right-col">
+            <div class="stud">
+                Student Information
+            </div>
+            <hr>
+            <table id="studentlist" class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Subject</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
